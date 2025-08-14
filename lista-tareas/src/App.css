@@ -17,13 +17,24 @@ h1 {
 .formulario-tarea table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .formulario-tarea input {
   width: 100%;
-  padding: 8px;
+  padding: 8px 12px;
   font-size: 16px;
   border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.formulario-tarea td:first-child {
+  width: 80%;
+}
+
+.formulario-tarea td:last-child {
+  width: 20%;
+  padding-left: 8px;
 }
 
 .formulario-tarea button {
@@ -32,6 +43,10 @@ h1 {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.formulario-tarea button:hover{
+  background-color: #357d37;
 }
 
 .lista-tareas {
